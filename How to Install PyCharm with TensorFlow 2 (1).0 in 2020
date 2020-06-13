@@ -1,0 +1,24 @@
+1. Install miniConda
+2. Open Anaconda Prompt
+3. conda env create -v -f tensorflow.yml (It will take 10 Mins)
+4. conda activate tensorflow
+5. verify
+	python
+	import tensorflow as tf
+	print(tf.__version__)
+
+6. Pycharm Software
+	Create New Project
+	Choose any location
+	1. Select Project Interpreter: Existing interpreter
+	2. Choose Existing interpreter
+	3. Click ...
+	4. Add Python Interpreter Dialog Box -> Select Conda Environment (Mostly it found it)
+		Interpreter -> location\Miniconda3\envs\tensorflow\python.exe
+		Conda Executable -> location\Miniconda3\Scripts\conda.exe
+		Check -> Make available to all projects
+		Click OK
+	5. Create a New Python File
+		import tensorflow as tf
+		print(tf.__version__)
+		
